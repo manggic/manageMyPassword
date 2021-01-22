@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+// import  PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import './App.css';
+import { Context } from './component/Context';
+import { Switch , Route, Link } from "react-router-dom";
+import SignUp from './component/SignUp';
+import SignIn from './component/SignIn';
+import Home from './component/Home';
+import { useState } from 'react';
+import { ToastContainer} from 'react-toastify'
+import Header from './component/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
+
+const  App = () => {
+   const [ user , setUser] = useState({})
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">        
+        
+        <Context.Provider value=  { {user , setUser} } >
+                 <Header />    
+
+                 <Switch>
+                    <Route path='/' component={ Home }  exact />                        
+                    <Route path='/signin' component={SignIn} exact />
+                    <Route path='/signup' component={ SignUp} exact />
+                 </Switch>
+        </Context.Provider>          
     </div>
   );
 }

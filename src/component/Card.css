@@ -1,0 +1,86 @@
+
+.card{
+     position: relative;
+     color: white;
+      height: 100px;
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(85, 197, 128);
+      transition: all .2s;
+}
+
+.cardBox:hover{
+      transform : scale(1.1);
+      
+}
+
+.addnew{
+    padding: 30px;
+    background-color: white;
+    width: 500px;
+    height: 230px;
+}
+
+.addnew label{
+    float: left;
+     padding: 0px; 
+}
+
+.info{
+    color : violet;
+    margin-top: 100px;
+     display: flex;
+     justify-content: center;
+}
+
+#hidden{
+    color: aliceblue;
+    height: 0px;
+    width: 100%;
+    background-color: rgb(46, 33, 33);
+    position: fixed;
+    top: 0px;
+    /* color: white; */
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.cross{
+     display: none;
+     cursor: pointer;
+}
+
+.cross{
+    /* position: absolute; */
+    /* top: -5px; */
+    margin-top: -5px;
+    margin-left: -4px;
+    color:rgb(46, 33, 33);
+    right: -5px;
+    font-size: 15px;
+    z-index: 100;
+}
+
+.cardBox:hover  .cross{
+      display: block;
+      opacity: 0.5; 
+}
+
+.cardBox{
+    display:flex;
+      /* margin: 30px; */
+      margin: 15px 35px;
+ 
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .cross
+    { 
+         display:block; 
+    }
+    }
+

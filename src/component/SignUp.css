@@ -1,0 +1,36 @@
+
+
+.form-signup{
+    padding: 20px;
+    background-color: rgb(52, 52, 75);
+     width: 500px;
+     border-radius: 10px;
+     color: wheat;
+     border: none;
+}
+
+/* img{
+     opacity: 0.5;
+} */
+
+.signup{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     background-color: rgb(32, 32, 51);
+     height: 93vh;
+     /* opacity: 0.5; */
+     /* background-repeat: no-repeat; */
+     /* background-size: 100%; */
+     /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpBZWePW1FFKmsRLHx5C1S4E1ttZKxmDaCXA&usqp=CAU'); */
+     /* background-color: rgb(75, 63, 46); */
+}
+
+
+@media only screen and (max-width: 600px) {
+     .form-signup
+     { width : 270px; 
+     }
+     }
+
