@@ -4,7 +4,7 @@
 - ### Initial setup </br> 
     1) clone/copy this project in your pc by using command :</br>
       `git clone <projectLink>`
-      ![alt text](proj_link.png "clone Link")
+      ![alt text](proj_link.PNG "clone Link")
      2) Install all the dependencies of the project by command :</br> 
     `npm start`
     3) You are ready to use the App
@@ -23,7 +23,7 @@
 
  - ### Picture 
   
-      ![alt text](project.png "clone Link")
+      ![alt text](project.PNG "clone Link")
           
  - ### Link to direct use the APP
    [ProjectLink](https://managemypassword-5e257.web.app)
