@@ -22,6 +22,7 @@
    - One can also delete a specific email and password associated with the account.
 
  - ### Picture 
+  
       ![alt text](project.png "clone Link")
           
 
