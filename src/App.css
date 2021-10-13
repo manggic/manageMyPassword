@@ -1,8 +1,8 @@
-
-
-
-*{
+* {
   box-sizing: border-box;
 }
 
-
+.App {
+  margin: 0px;
+  background: #264052b0;
+}
